@@ -1,11 +1,19 @@
+#python default
+import pdb #python debugging 
 import argparse #parse command line information when running the script
-import iris
+import calendar
+
+#specific packages
+import numpy
 import matplotlib.pyplot as plt
+import iris
 import iris.plot as iplt
 import iris.coord_categorisation
 import cmocean
-import numpy
-import pdb #python debugging 
+
+#custom
+import unit_conversion
+
 
 def read_data(fname, month):
     """Read an input data file"""
